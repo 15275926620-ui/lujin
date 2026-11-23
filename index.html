@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="鲁锦·织声——基于《鲁锦》事实库的社交媒体营销传播创作平台。">
+  <title>鲁锦·织声｜让千年经纬被看见</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="facts.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <div class="paper-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand route-link" href="#home" aria-label="鲁锦织声首页">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="brand-type"><strong>鲁锦<span class="brand-dot">·</span>织声</strong><small>LU JIN CONTENT STUDIO</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#home" class="nav-link" data-route="home"><span>01</span> 首页</a>
+      <a href="#studio" class="nav-link" data-route="studio"><span>02</span> 智能创作</a>
+      <a href="#library" class="nav-link" data-route="library"><span>03</span> 事实库</a>
+    </nav>
+    <button class="source-status" type="button" data-go-library>
+      <span class="status-dot" aria-hidden="true"></span>
+      <span><strong id="header-fact-count">19</strong> 条事实已载入</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4"/></svg>
+    </button>
+  </header>
+
+  <main id="main-content">
+    <section class="view home-view" id="home-view" data-view="home" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="hero-kicker reveal-item">
+            <span class="fine-line"></span>
+            <span>鲁西南民间织锦</span>
+            <button class="text-citation" type="button" data-fact="F04">国家级非遗扩展项目 <sup>F04</sup></button>
+          </div>
+          <div class="hero-heading reveal-item">
+            <p class="hero-overline">经天纬地 · 织古传今</p>
+            <h1 id="home-title"><span>鲁</span><span>锦</span></h1>
+            <p class="hero-subtitle">织就齐鲁大地<br>的千年经纬</p>
+            <p class="hero-english">LU JIN<br><span>TRADITIONAL TEXTILE</span></p>
+          </div>
+          <div class="hero-intro reveal-item">
+            <span class="intro-index">序 / 01</span>
+            <p>鲁锦，即鲁西南民间织锦，是一种古老的纯棉手工纺织品。红、黄、蓝、绿、紫在经纬间交织，每一道工序都依赖匠人的双手。</p>
+            <div class="intro-sources">
+              <button type="button" data-fact="F01">F01 基本定义</button>
+              <button type="button" data-fact="F06">F06 色彩</button>
+              <button type="button" data-fact="F07">F07 手工</button>
+            </div>
+          </div>
+          <div class="hero-actions reveal-item">
+            <a class="button button-primary route-link" href="#studio">
+              开始创作
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>
+            </a>
+            <a class="button button-quiet route-link" href="#library">查看事实库 <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal-item">
+          <div class="hero-coordinate" aria-hidden="true"><span>经</span><i></i><span>纬</span></div>
+          <div class="hero-image-wrap" id="hero-image-wrap">
+            <img id="hero-image" alt="暖米白背景中，红蓝黄几何纹样的鲁锦织物搭在传统木织机上" fetchpriority="high">
+            <div class="image-loading" id="hero-loading" role="status"><span class="loading-thread"></span>正在织入主视觉</div>
+            <div class="image-error" id="hero-error" hidden>
+              <p>主视觉暂时未能载入</p>
+              <button type="button" class="text-button" id="retry-hero">重新加载</button>
+            </div>
+          </div>
+          <div class="hero-caption">
+            <span>纯棉手织 · 几何纹样 · 天然染色</span>
+            <span>AI 示意图</span>
+          </div>
+          <!-- <div class="heritage-seal" aria-label="齐鲁非遗印章式装饰"> -->
+            <!-- <span>齐鲁</span><span>非遗</span> -->
+          <!-- </div> -->
+          <p class="hero-side-note">一经一纬<br>皆有来处</p>
+        </div>
+
+        <div class="hero-bottom reveal-item">
+          <span>基于用户提供《鲁锦.docx》构建</span>
+          <span class="scroll-note"><i></i> 向下探索鲁锦之美</span>
+          <span>菏泽 · 山东</span>
+        </div>
+      </div>
+
+<section class="home-intro section-shell" aria-labelledby="home-intro-title">
+       <div class="section-heading">
+          <p class="section-eyebrow">FROM FACTS TO STORIES</p>
+          <h2 id="home-intro-title">让每一句传播<br>都有据可循</h2>
+        </div>
+        <div class="home-intro-copy">
+          <p>不是泛泛的“AI写文案”，而是一套从鲁锦资料出发的内容工作流。选定主题与平台，即可获得有出处、有差异、有画面的传播方案。</p>
+          <div class="fact-metrics" aria-label="平台能力数据">
+            <div><strong id="metric-fact-count">19</strong><span>条文档事实</span></div>
+            <div><strong>3</strong><span>类社交平台</span></div>
+            <div><strong>100<small>%</small></strong><span>生成事实可回溯</span></div>
+          </div>
+        </div>
+      </section>
+
+   <section class="workflow-section section-shell" aria-labelledby="workflow-title">
+       <div class="workflow-topline">
+          <p class="section-eyebrow">CONTENT WORKFLOW</p>
+          <h2 id="workflow-title">三步，织成一条好内容</h2>
+          <a href="#studio" class="text-link route-link">进入创作台 <span>→</span></a>
+        </div>
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <span class="workflow-number">01</span>
+            <div class="workflow-icon weave-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <h3>选定事实主题</h3>
+            <p>历史、非遗、织造、染色、纹样，五类内容均来自原始文档。</p>
+            <button type="button" class="card-link" data-go-library>浏览事实库 <span>↗</span></button>
+          </article>
+          <article class="workflow-card featured">
+            <span class="workflow-number">02</span>
+            <div class="workflow-icon lines-icon" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>生成平台文案</h3>
+            <p>小红书重体验，抖音重节奏，公众号重叙事；同一事实，不同表达。</p>
+            <a href="#studio" class="card-link route-link">开始生成 <span>↗</span></a>
+          </article>
+          <article class="workflow-card">
+            <span class="workflow-number">03</span>
+            <div class="workflow-icon frame-icon" aria-hidden="true"><i></i></div>
+            <h3>适配视觉与导出</h3>
+            <p>按平台画幅生成AI示意图，文案连同事实来源一键复制或导出。</p>
+            <a href="#studio" class="card-link route-link">查看创作效果 <span>↗</span></a>
+          </article>
+        </div>
+      </section>
+
+    <section class="theme-section section-shell" aria-labelledby="theme-title">
+        <div class="theme-intro">
+          <p class="section-eyebrow">FIVE STORY ANGLES</p>
+          <h2 id="theme-title">从哪一根线<br>开始讲述？</h2>
+          <p>五种内容视角，让鲁锦传播不止一种模样。</p>
+        </div>
+        <div class="theme-list" id="home-theme-list">
+          <button type="button" data-theme-link="history"><span>01</span><strong>千年经纬</strong><small>历史沿革</small><i>→</i></button>
+          <button type="button" data-theme-link="heritage"><span>02</span><strong>非遗鲁锦</strong><small>非遗认定</small><i>→</i></button>
+          <button type="button" data-theme-link="craft"><span>03</span><strong>匠心织造</strong><small>织造工艺</small><i>→</i></button>
+          <button type="button" data-theme-link="dye"><span>04</span><strong>草木染意</strong><small>天然染色</small><i>→</i></button>
+          <button type="button" data-theme-link="pattern"><span>05</span><strong>纹样寓意</strong><small>几何纹样</small><i>→</i></button>
+        </div>
+      </section>
+    </section>
+
+    <section class="view studio-view" id="studio-view" data-view="studio" aria-labelledby="studio-title" hidden>
+      <div class="page-heading section-shell compact-heading">
+        <div>
+          <p class="section-eyebrow">02 / CONTENT STUDIO</p>
+          <h1 id="studio-title">一块鲁锦，三种表达</h1>
+          <p>选择传播平台与事实主题，生成有出处的内容与配图。</p>
+        </div>
+        <div class="prototype-badge"><span></span>事实约束生成 · 本地交互原型</div>
+      </div>
+
+      <div class="studio-layout section-shell">
+        <aside class="control-panel" aria-label="创作设置">
+          <div class="panel-heading"><span>创作设置</span><small>CREATE / 01</small></div>
+          <fieldset class="control-group">
+            <legend><span>01</span> 选择平台</legend>
+            <div class="platform-options" id="platform-options">
+              <button type="button" data-platform="xiaohongshu" aria-pressed="true"><strong>小红书</strong><small>生活方式笔记</small><i></i></button>
+              <button type="button" data-platform="douyin" aria-pressed="false"><strong>抖音</strong><small>短视频脚本</small><i></i></button>
+              <button type="button" data-platform="wechat" aria-pressed="false"><strong>微信公众号</strong><small>深度图文</small><i></i></button>
+            </div>
+          </fieldset>
+          <fieldset class="control-group">
+            <legend><span>02</span> 选择事实主题</legend>
+            <div class="theme-options" id="theme-options">
+              <button type="button" data-theme="history" aria-pressed="true">千年经纬</button>
+              <button type="button" data-theme="heritage" aria-pressed="false">非遗鲁锦</button>
+              <button type="button" data-theme="craft" aria-pressed="false">匠心织造</button>
+              <button type="button" data-theme="dye" aria-pressed="false">草木染意</button>
+              <button type="button" data-theme="pattern" aria-pressed="false">纹样寓意</button>
+            </div>
+            <p class="control-description" id="theme-description"></p>
+          </fieldset>
+          <fieldset class="control-group">
+            <legend><span>03</span> 表达风格</legend>
+            <div class="tone-options" id="tone-options">
+              <button type="button" data-tone="warm" aria-pressed="true">温暖叙事</button>
+              <button type="button" data-tone="knowledge" aria-pressed="false">知识科普</button>
+              <button type="button" data-tone="concise" aria-pressed="false">简洁有力</button>
+            </div>
+          </fieldset>
+          <div class="control-group">
+            <label class="select-label" for="visual-style"><span>04</span> 配图构图</label>
+            <div class="select-wrap">
+              <select id="visual-style">
+                <option value="editorial">东方纪实 · 整体场景</option>
+                <option value="macro">纤维细节 · 局部特写</option>
+                <option value="overhead">经纬秩序 · 俯视静物</option>
+              </select>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
+            </div>
+          </div>
+          <button type="button" class="generate-button" id="generate-button">
+            <span class="generate-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg></span>
+            <span><strong>换一版传播方案</strong><small>事实不变，表达焕新</small></span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>
+          </button>
+          <p class="fact-guarantee"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2 16 4v5c0 4-2.5 7-6 9-3.5-2-6-5-6-9V4l6-2Z"/><path d="m7 10 2 2 4-4"/></svg>仅调用已入库事实，不补充库外资料</p>
+        </aside>
+
+        <div class="output-workspace">
+          <div class="output-toolbar">
+            <div class="output-identity"><span id="output-platform-mark">红</span><div><strong id="output-platform-name">小红书传播方案</strong><small id="output-theme-name">主题：千年经纬</small></div></div>
+            <div class="validation-badge" id="validation-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7"/></svg>事实校验通过</div>
+          </div>
+
+          <div class="output-grid">
+            <article class="copy-panel" aria-labelledby="copy-panel-title">
+              <div class="content-topline"><span id="copy-panel-title">生成文案</span><small id="content-variant">VERSION 01</small></div>
+              <div id="generated-content" class="generated-content" aria-live="polite"></div>
+              <div class="content-actions">
+                <button type="button" class="button button-primary" id="copy-content"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="6" y="6" width="10" height="11" rx="1"/><path d="M13 6V3H3v11h3"/></svg>复制完整文案</button>
+                <button type="button" class="button button-secondary" id="download-content"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m-4-4 4 4 4-4M3 16h14"/></svg>导出 TXT</button>
+              </div>
+            </article>
+
+            <aside class="visual-panel" aria-labelledby="visual-panel-title">
+              <div class="content-topline"><span id="visual-panel-title">平台配图</span><small id="image-ratio">3:4 竖版</small></div>
+              <div class="generated-image-frame ratio-portrait" id="generated-image-frame">
+                <img id="generated-image" alt="根据所选鲁锦事实主题生成的平台配图">
+                <div class="image-loading" id="image-loading" role="status"><span class="loading-thread"></span>正在生成平台配图</div>
+                <div class="image-error" id="image-error" hidden><p>配图暂时未能载入</p><button type="button" class="text-button" id="retry-image">重新加载</button></div>
+                <span class="ai-label">AI 示意图</span>
+                <span class="visual-theme-label" id="visual-theme-label">千年经纬</span>
+              </div>
+              <div class="visual-meta"><span id="visual-platform-label">小红书 · 生活方式构图</span><a id="open-image" href="#" target="_blank" rel="noopener">打开原图 ↗</a></div>
+              <details class="prompt-details">
+                <summary>查看配图提示词 <span>+</span></summary>
+                <p id="image-prompt"></p>
+                <button type="button" class="text-button" id="copy-prompt">复制提示词</button>
+              </details>
+            </aside>
+          </div>
+
+          <section class="source-panel" aria-labelledby="source-panel-title">
+            <div class="source-panel-heading">
+              <div><span class="source-check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg></span><strong id="source-panel-title">本版事实来源</strong></div>
+              <span id="source-summary">0 条引用 · 0 项事实</span>
+            </div>
+            <div class="used-facts" id="used-facts"></div>
+            <p class="source-note">点击事实编号可查看《鲁锦.docx》对应原文；复制与导出均自动附来源。</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="view library-view" id="library-view" data-view="library" aria-labelledby="library-title" hidden>
+      <div class="page-heading section-shell library-heading">
+        <div>
+          <p class="section-eyebrow">03 / VERIFIED FACT LIBRARY</p>
+          <h1 id="library-title">每一句，都有来处</h1>
+          <p>平台只从这里取用鲁锦事实。逐条核对，放心创作。</p>
+        </div>
+        <div class="source-document-card">
+          <div class="doc-icon" aria-hidden="true"><span>DOCX</span></div>
+          <div><strong>鲁锦.docx</strong><span>用户提供 · 唯一事实来源</span></div>
+          <span class="doc-status">已整理</span>
+        </div>
+      </div>
+
+      <div class="library-shell section-shell">
+        <div class="library-summary">
+          <div><strong id="library-total">19</strong><span>条事实</span></div>
+          <div><strong>5</strong><span>个内容分类</span></div>
+          <div><strong>16</strong><span>段原始资料</span></div>
+          <p>资料边界：未引入外部人物、年份、功效或商业信息。</p>
+        </div>
+        <div class="library-tools">
+          <label class="search-box" for="fact-search">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+            <input type="search" id="fact-search" placeholder="搜索事实、关键词或原文，如“板蓝根”" autocomplete="off">
+            <kbd>⌘ K</kbd>
+          </label>
+          <div class="category-filters" id="category-filters" aria-label="按分类筛选事实">
+            <button type="button" data-category="all" aria-pressed="true">全部</button>
+            <button type="button" data-category="文化源流" aria-pressed="false">文化源流</button>
+            <button type="button" data-category="非遗认定" aria-pressed="false">非遗认定</button>
+            <button type="button" data-category="材质色彩" aria-pressed="false">材质色彩</button>
+            <button type="button" data-category="织造工艺" aria-pressed="false">织造工艺</button>
+            <button type="button" data-category="纹样寓意" aria-pressed="false">纹样寓意</button>
+          </div>
+        </div>
+        <div class="library-result-line"><span id="library-result-count">显示 19 条事实</span><span>按文档顺序排列</span></div>
+        <div class="fact-grid" id="fact-grid"></div>
+        <div class="empty-state" id="fact-empty" hidden>
+          <span>未找到</span><h2>没有匹配的鲁锦事实</h2><p>试试更短的关键词，或切换到“全部”分类。</p><button type="button" class="button button-secondary" id="reset-filters">清除筛选</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark small" aria-hidden="true"><i></i><i></i><i></i><i></i></span><strong>鲁锦·织声</strong></div>
+    <p>以事实为经，以创意为纬。</p>
+    <p>内容来源：《鲁锦.docx》 · 配图均为 AI 示意图</p>
+  </footer>
+
+  <dialog class="fact-dialog" id="fact-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-topline"><span id="dialog-id">F01</span><button type="button" id="close-dialog" aria-label="关闭事实原文"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+    <p class="dialog-category" id="dialog-category"></p>
+    <h2 id="dialog-title"></h2>
+    <blockquote id="dialog-quote"></blockquote>
+    <div class="dialog-source"><span>原始出处</span><strong id="dialog-source"></strong></div>
+    <p class="dialog-note">原文仅按文档段落定位，未作外部延伸。</p>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
